@@ -1,0 +1,9 @@
+# Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating system cache files
+.DS_Store
+Thumbs.db
