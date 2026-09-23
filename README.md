@@ -59,9 +59,12 @@ $$x_t = (1 - t) \cdot x_0 + t \cdot x_1, \quad t \in [0, 1]$$
 The exact vector field along the straight line path is given by:
 $$u_t(x_t) = x_1 - x_0$$
 
-### Objective Function
+
+## Objective Function
+
 The network $v_\theta$ minimizes the Conditional Continuous Flow Matching loss conditioned on historical context $\mathbf{C}$:
-$$\mathcal{L}_{\text{CCFM}} = \mathbb{E}_{t, x_0, x_1, \mathbf{C}} \left[ \Vert{} v_\theta(x_t, t, \mathbf{C}) - (x_1 - x_0) \Vert{}^2 \right]$$
+
+$$\mathcal{L}_{\text{CCFM}} = \mathbb{E}_{t, x_0, x_1, \mathbf{C}} \left[ \| v_\theta(x_t, t, \mathbf{C}) - (x_1 - x_0) \|^2 \right]$$
 
 ---
 
